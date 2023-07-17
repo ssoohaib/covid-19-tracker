@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.app-left{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.app-left-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.app-left-header>h1{
+  font-weight: 500;
+}
+
+.app-left-buttons{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.info-box{
+  flex: 1;
+
+}
+
+.info-box:not(:last-child) {
+  margin-right: 10px;
+}
+
+.app-right{
+  width: 35%;
+  height: 100%;
+}
+
+.app-right-table{
+  height: 50%;
+  overflow-y: scroll;
+  width: 100%;
+
+}
+
+.app-right-table>p{
+  padding-left: .2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: white;  
+  margin: 1rem 0;
+}
+
+.app-right-table>table{
+  /* margin-top: 1.6rem; */
+  width: 100%;
+  color: #6a5d5d;
+}
+
+.app-right-table>table>tr>td{
+  padding: .2rem;
+}
+
+table>tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}
+
+.app-right-table::-webkit-scrollbar {
+  width: .4rem;
+}
+
+.app-right-table::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.app-right-table::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 1rem;
+}
+
+.app-right-chart{
+  height: 50%;
+  margin-top: 2rem;
+}
+
+.app-right-chart>p{
+  padding-left: .2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.line-chart{
+  height: 80%;
+}
+
+.red-clicked{
+  border-top: .5em solid red ;
+}
+
+.green-clicked{
+  border-top: .5em solid green ;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+  .app{
+    height: auto;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .app-left{
+    width: 95%;
+    /* height: 50%; */
+    margin-left: 0;
+  }
+
+  .app-right{
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-right-table{
+    margin-top: 2rem;
+    height: 40vh;
+  }
+
+  .app-right-table>p{
+    position: unset;
+  }
+
+  .app-right-chart{
+    height: 40vh;
+  }
+
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+  .app{
+    height: auto;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .app-left{
+    width: 95%;
+    /* height: 50%; */
+    margin-left: 0;
+  }
+
+  .app-right{
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-right-table{
+    margin-top: 2rem;
+    height: 40vh;
+
+  }
+
+  .app-right-table>p{
+    position: unset;
+  }
+
+  .app-right-chart{
+    height: 40vh;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+  .app{
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .app-left{
+    width: 95%;
+    /* height: 50%; */
+    margin-left: 0;
+  }
+
+  .app-right{
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-right-table{
+    margin-top: 2rem;
+    height: 40vh;
+  }
+
+  .app-right-table>p{
+    position: unset;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+  .app{
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    overflow: hidden;
+  }
+
+  .app-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .app-right{
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-right-table{
+    margin-top: 0;
+    height: 50%;
+    overflow-y: scroll;
+    width: 100%;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+
+}
