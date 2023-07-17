@@ -67,13 +67,13 @@ Install covid-19-tracker with npm
 ## Screenshots
 
 #### Cases
-![cases](https://images5.alphacoders.com/422/422909.jpg)
+![cases](./screenshots/1.png)
 
 #### Deaths
-![deaths](https://images5.alphacoders.com/422/422909.jpg)
+![deaths](./screenshots/2.png)
 
 #### Recovered
-![recovered](https://images5.alphacoders.com/422/422909.jpg)
+![recovered](./screenshots/3.png)
 ## API Reference
 
 #### [disease.sh](https://disease.sh/) - Open Disease Data API
