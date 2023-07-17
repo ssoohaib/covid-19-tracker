@@ -69,10 +69,10 @@ Install covid-19-tracker with npm
 #### Cases
 ![cases](./screenshots/1.png)
 
-#### Deaths
+#### Recovered
 ![deaths](./screenshots/2.png)
 
-#### Recovered
+#### Deaths
 ![recovered](./screenshots/3.png)
 ## API Reference
 
